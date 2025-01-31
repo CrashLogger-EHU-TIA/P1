@@ -26,8 +26,7 @@ fprintf("Quantitative:\n");
 fprintf("mpg, cylinders, displacement, horsepower, weight, acceleration, year")
 
 fprintf("Qualitative:\n");
-fprintf("origin, name")
-
+fprintf("origin, name\n");
 
 % Apartado 3 - Calcular la media, desviación estándar y rango de cada uno 
 % de los predictores cuantitativos
@@ -112,9 +111,9 @@ disp('%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%');
 fprintf("El tamaño del motor es el principal indicador. Diferentes regiones del mundo utilizan motores diferentes. \n")
 fprintf("Normativas, regulaciones y necesidades de las diferentes regiones regulan los motores.\n Japón es mas eficiente que Europa. Europa es mas eficiente que norteamérica.\n")
 
-usaCars = any(Auto.origin == 1, 2)
-euroCars = any(Auto.origin == 2, 2)
-japCars = any(Auto.origin == 3, 2)
+usaCars = any(Auto.origin == 1, 2);
+euroCars = any(Auto.origin == 2, 2);
+japCars = any(Auto.origin == 3, 2);
 
 figure(6);
 subplot(3,2,1)

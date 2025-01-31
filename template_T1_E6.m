@@ -9,7 +9,7 @@ load College.mat
 
 disp('%%%%%%%%%%%%%%%%% EJERCICIO 6 %%%%%%%%%%%%%%%%%');
 disp('%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%');
-fprintf('\n\n')
+fprintf('\n\n')El
 
 % Apartado 1 - Calcular la media y desviación estándar de cada una de las 
 % variables cuantitativas
@@ -41,28 +41,28 @@ ylabel("Accepted Applicants")
 subplot(2,3,2);
 scatter(College.Enroll, College.F_Undergrad,'cyan')
 title("Enroll vs F-Undergrad")
-xlabel("Enrolled students")
-ylabel("Full Time Undergrad")
+xlabel("Enrolled Students")
+ylabel("Full-Time Undergrad")
 subplot(2,3,3);
 scatter(College.Room_Board, College.Outstate,'green')
-title("Room vs Out of state")
-xlabel("Accomodation Cost")
-ylabel("Out of state students")
+title("Room vs Out-of-state")
+xlabel("Accommodation Cost")
+ylabel("Out-of-state Students")
 subplot(2,3,4);
 scatter(College.PhD, College.Expend, 'yellow')
 title("PhD vs Expend")
-xlabel("PhD proffessor percentage")
-ylabel("Expenditure per student")
+xlabel("PhD Professor Percentage")
+ylabel("Expenditure per-student")
 subplot(2,3,5);
 scatter(College.S_F_Ratio, College.Expend, 'magenta')
 title("S-F-Ratio vs Expend")
 xlabel("Student-Faculty Ratio")
-ylabel("Expenditure per student")
+ylabel("Expenditure per-student")
 subplot(2,3,6);
 scatter(College.perc_alumni, College.Expend, 'red')
 title("Perc-Alumni vs Expend")
-xlabel("Alumni donation percentage")
-ylabel("Expenditure per student")
+xlabel("Alumni Donation Percentage")
+ylabel("Expenditure per-student")
 
 % Apartado 4 - Binarizar variable y boxplot
 fprintf('\n')
@@ -116,7 +116,7 @@ hold on
 h2 = histogram(College.PhD(Elite, :), 0 : 3 : 100);
 hold off
 legend("Non-elite", "Elite")
-xlabel("PhD proffessor percentage")
+xlabel("PhD professor percentage")
 ylabel("Universities with that amount")
 
 subplot(2,3,4)
@@ -125,7 +125,7 @@ hold on
 h2 = histogram(College.Terminal(Elite, :), 0 : 3 : 100);
 hold off
 legend("Non-elite", "Elite")
-xlabel("Terminal rank proffessor percentage")
+xlabel("Terminal rank professor percentage")
 ylabel("Universities with that amount")
 
 subplot(2,3,5)
@@ -134,7 +134,7 @@ hold on
 h2 = histogram(College.Room_Board(Elite, :), min(College.Room_Board) : 200 : max(College.Room_Board));
 hold off
 legend("Non-elite", "Elite")
-xlabel("Accomodation cost")
+xlabel("Accommodation cost")
 ylabel("Universities with that amount")
 
 subplot(2,3,6)
